@@ -1,97 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Profile</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Your Name</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Resume</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <div class="jumbotron">
-        <h1 class="display-4">Hello, world!</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
-            featured content or information.</p>
-        <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-    </div>
-
-    <div class="card">
-        <img class="card-img-top" src="images" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text</p>
-
-
-            <header>
-                <h1>My GitHub Profile</h1>
-            </header>
-
-            <main>
-                <section>
-                    <h2>About Me</h2>
-                    <p>Hi, I'm [your name] and I'm a [your profession or job title]. I have [number of years] years of
-                        experience in [your field] and I'm passionate about [your interests or specializations].</p>
-                </section>
-
-                <section>
-                    <h2>Skills</h2>
-                    <ul>
-                        <li>[Skill 1]</li>
-                        <li>[Skill 2]</li>
-                        <li>[Skill 3]</li>
-                        <!-- Add more skills as necessary -->
-                    </ul>
-                </section>
-
-                <section>
-                    <h2>Projects</h2>
-                    <ul>
-                        <li><a href="[project URL]">[Project name]</a> - [Short project description]</li>
-                        <li><a href="[project URL]">[Project name]</a> - [Short project description]</li>
-                        <li><a href="[project URL]">[Project name]</a> - [Short project description]</li>
-                        <!-- Add more projects as necessary -->
-                    </ul>
-                </section>
-
-                <section>
-                    <h2>Contact Me</h2>
-                    <ul>
-                        <li>Email: [your email address]</li>
-                        <li>LinkedIn: <a href="[your LinkedIn URL]">[your name]</a></li>
-                        <li>GitHub: <a href="[your GitHub URL]">[your name]</a></li>
-                        <!-- Add more contact information as necessary -->
-                    </ul>
-                </section>
-            </main>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+    <main>
+        <section id="about-me">
+            <h2>About Me</h2>
+                <p>Hello there! I'm a former teacher turned full-stack software developer with a knack for quickly adapting to new technologies and working with teammates. My journey in tech started with a deep-seated love for problem-solving and an interest in the connections between technology, language, and culture.</p>
+        
+                <p>My tech toolkit includes Spring Boot, Java, PostgreSQL, HTML, CSS, JavaScript, Vue.js, and more. Whether it's designing responsive UIs or testing with JUnit, I'm always ready to dive in and learn. I've worked on projects like a Tabletop RPG Inventory Management System and a clone of ChatGPT that have allowed me to apply these skills in real-world contexts. Check them out in my projects section!</p>
+            
+                <p>Before my foray into tech, I spent time as a Latin and Ancient History teacher, where I not only honed my communication skills but also learned how to efficiently manage and track progress, skills that have served me well in the world of coding.</p>
+            
+                <p>I'm currently polishing my skills at Tech Elevator, a 30-week full-stack coding bootcamp, where I've already logged 800+ hours of development education and application. I'm eagerly looking forward to bringing my passion for creating efficient and effective tech solutions into an entry-level software development role.</p>
+            
+                <p>Feel free to explore my portfolio and get in touch. I'm always open to new opportunities and conversations about tech!</p>
+        </section>
+        
+        <section>
+            <h2>My Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <img src="img/project1.png" alt="Project 1 screenshot">
+                <p>Here is the link to the live project of my ChatGPT clone using react! https://glacial-wildwood-71273.herokuapp.com/</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <img src="img/project2.png" alt="Project 2 screenshot">
+                <p>This is where you'll describe the project, the technologies you used, and what you learned from it. Be sure to include a link to the live project and the source code.</p>
+            </div>
+            <!-- Add more projects as necessary -->
+        </section>
+        <section>
+            <h2>Contact Me</h2>
+            <p>This is where you'll provide contact information, such as your email address and LinkedIn profile. You might also want to include a contact form so that people can reach out to you directly from your portfolio site.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2023 My Name</p>
+    </footer>
+    <script src="js/scripts.js"></script>
 </body>
-
 </html>
