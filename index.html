@@ -1,49 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio of a full-stack developer with a background in teaching.">
+    <meta name="keywords" content="Full-Stack Developer, Java, Spring Boot, PostgreSQL, HTML, CSS, JavaScript, Vue.js">
+    <meta name="author" content="Jonah Popp">
     <title>My Portfolio</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body>
     <header>
         <h1>My Portfolio</h1>
     </header>
     <main>
-        <section id="about-me">
+        <article id="about-me">
             <h2>About Me</h2>
-                <p>Hello there! I'm a former teacher turned full-stack software developer with a knack for quickly adapting to new technologies and working with teammates. My journey in tech started with a deep-seated love for problem-solving and an interest in the connections between technology, language, and culture.</p>
-        
-                <p>My tech toolkit includes Spring Boot, Java, PostgreSQL, HTML, CSS, JavaScript, Vue.js, and more. Whether it's designing responsive UIs or testing with JUnit, I'm always ready to dive in and learn. I've worked on projects like a Tabletop RPG Inventory Management System and a clone of ChatGPT that have allowed me to apply these skills in real-world contexts. Check them out in my projects section!</p>
-            
-                <p>Before my foray into tech, I spent time as a Latin and Ancient History teacher, where I not only honed my communication skills but also learned how to efficiently manage and track progress, skills that have served me well in the world of coding.</p>
-            
-                <p>I'm currently polishing my skills at Tech Elevator, a 30-week full-stack coding bootcamp, where I've already logged 800+ hours of development education and application. I'm eagerly looking forward to bringing my passion for creating efficient and effective tech solutions into an entry-level software development role.</p>
-            
-                <p>Feel free to explore my portfolio and get in touch. I'm always open to new opportunities and conversations about tech!</p>
-        </section>
-        
+            <p>Hello there! I'm a former teacher turned full-stack software developer with a knack for quickly adapting
+                to new technologies and working with teammates. My journey in tech started with a deep-seated love for
+                problem-solving and an interest in the connections between technology, language, and culture.</p>
+
+            <p>My tech toolkit includes Spring Boot, Java, PostgreSQL, HTML, CSS, JavaScript, Vue.js, and more. Whether
+                it's designing responsive UIs or testing with JUnit, I'm always ready to dive in and learn. I've worked
+                on projects like a Tabletop RPG Inventory Management System and a clone of ChatGPT that have allowed me
+                to apply these skills in real-world contexts. Check them out in my projects section!</p>
+
+            <p>Before my foray into tech, I spent time as a Latin and Ancient History teacher, where I not only honed my
+                communication skills but also learned how to efficiently manage and track progress, skills that have
+                served me well in the world of coding.</p>
+
+            <p>I'm currently polishing my skills at Tech Elevator, a 30-week full-stack coding bootcamp, where I've
+                already logged 800+ hours of development education and application. I'm eagerly looking forward to
+                bringing my passion for creating efficient and effective tech solutions into an entry-level software
+                development role.</p>
+
+            <p>Feel free to explore my portfolio and get in touch. I'm always open to new opportunities and
+                conversations about tech!</p>
+        </article>
+
         <section>
             <h2>My Projects</h2>
-            <div class="project">
+            <article class="project" style="--i: 0;">
                 <h3>Project 1</h3>
-                <img src="img/project1.png" alt="Project 1 screenshot">
-                <p>Here is the link to the live project of my ChatGPT clone using react! https://glacial-wildwood-71273.herokuapp.com/</p>
-            </div>
-            <div class="project">
+                <img src="img/react-chatGPT-clone_image_800x450.png" alt="Screenshot of Project 1, a ChatGPT clone">
+                <p>Here is the link to the live project of my ChatGPT clone using react! The title of the clone, "LennyGPT", is an affectionate tribute to my roommate's new puppy, Lenny. <a
+                        href="https://glacial-wildwood-71273.herokuapp.com/" target="_blank">Check it out!</a></p>
+            </article>
+            <article class="project" style="--i: 1;">
                 <h3>Project 2</h3>
-                <img src="img/project2.png" alt="Project 2 screenshot">
-                <p>This is where you'll describe the project, the technologies you used, and what you learned from it. Be sure to include a link to the live project and the source code.</p>
-            </div>
+                <img src="img/inventorymanagerproject.jpg" alt="Screenshot of Project 2, a Tabletop RPG Inventory Management System">
+                <p>Although not live at the moment, here is a Java Spring Boot project with a react frontend that uses a SQL database (using PostgreSQL) to keep track of and update player characters and their respective items. <a href="https://github.com/caesarslegions/web-inventory-manager/tree/master">Here is a link to the github repository!</a></p>
+            </article>
             <!-- Add more projects as necessary -->
         </section>
         <section>
             <h2>Contact Me</h2>
-            <p>This is where you'll provide contact information, such as your email address and LinkedIn profile. You might also want to include a contact form so that people can reach out to you directly from your portfolio site.</p>
+            <address>
+                Email: jonah.popp@gmail.com
+            </address>
         </section>
     </main>
     <footer>
-        <p>Copyright &copy; 2023 My Name</p>
+        <p>&copy; 2023 Jonah Popp</p>
     </footer>
     <script src="js/scripts.js"></script>
 </body>
+
 </html>

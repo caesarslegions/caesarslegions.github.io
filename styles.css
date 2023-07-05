@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
 
 body {
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
     color: #333;
-    line-height: 1.5;
+    line-height: 1.7;
 }
 
 header {
-    background-color: #333;
+    background-color: #1a237e; /* Dark Blue */
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -21,17 +21,15 @@ main {
 }
 
 footer {
-    background-color: #333;
+    background-color: #1a237e; /* Dark Blue */
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
-    bottom: 0;
     width: 100%;
 }
 
 #about-me {
-    background-color: #fafafa;
+    background-color: #e8eaf6; /* Light Blue */
     color: #333;
     padding: 20px;
     margin: 20px;
@@ -40,7 +38,7 @@ footer {
 }
 
 #about-me h2 {
-    color: #666;
+    color: #3949ab; /* Medium Blue */
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 24px;
@@ -58,9 +56,57 @@ footer {
     border: 1px solid #ccc;
     padding: 20px;
     margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+    animation-delay: calc(var(--i) * 0.2s);
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project h3 {
+    color: #3949ab; /* Medium Blue */
 }
 
 .project img {
     width: 100%;
     height: auto;
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        line-height: 1.8;
+    }
+
+    #about-me, .project {
+        margin: 40px;
+    }
+
+    .project {
+        display: flex;
+        align-items: center;
+    }
+
+    .project img {
+        width: 50%;
+        margin-right: 20px;
+    }
+
+    .project h3, .project p {
+        width: 50%;
+    }
 }
